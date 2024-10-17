@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Spotify</title>
+    <link rel="stylesheet" href="../style/step2.css">
+    <link rel="icon" href="../icons/spotify-brands-solid.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/613e71a6c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="signup-landing">
+            <header class="logo">
+                <i class="fa-brands fa-spotify"></i>
+                <span class="tooltip">Spotify</span>
+            </header>
+            <div class="progress-bar">
+                <div class="progress-left"></div>
+                <div class="progress-right"></div>
+            </div>
+
+            <section class="arrow-sec">
+                <a href="step1.html"><i class="fa-solid fa-chevron-left"></i></a>
+                <div class="arrow-inner">
+                    <p>Step 2 of 3</p>
+                    <p>Tell us about yourself</p>
+                </div>
+            </section>
+            <main>
+                <form id="detail-form" novalidate>
+                    <label for="name">Name</label>
+                    <p>This name will appear on your profile</p>
+                    <input type="text" id="name" required>
+                    <span class="error-message name-error"><i class="fa-solid fa-circle-exclamation"></i> Enter a name for your profile.</span>
+
+                    <label for="dob">Date of birth</label>
+                    <p>Why do we need your date of birth? <a href="#"> Learn more.</a></p>
+                    <section class="sec">
+                        <input type="text" id="dob" placeholder="yyyy" pattern="\d{4}" required> 
+                        <select name="month" id="month">
+                            <option value="" disabled selected>Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <input type="text" id="dob2" placeholder="dd" pattern="\d{2}" required>
+                    </section>
+                    <div class="error">
+                        <span class="error-message">
+                            <i class="fa-solid fa-circle-exclamation"></i> 
+                            Please enter the day of your birth date by entering a number between 1 and 31.
+                        </span>
+                        <span class="error-message">
+                            <i class="fa-solid fa-circle-exclamation"></i> 
+                            Please enter the year of your birth date using four digits (e.g., 1990). 
+                        </span>
+                    </div>
+                    <label for="gender">Gender</label>
+                    <p>We use your gender to help personalize our content recommendations and ads for you.</p>
+                    <div class="gender-selection custom-radio">
+                        <input type="radio" id="man" name="gender" value="man">
+                        <label for="man" class="radio-label">Man</label>
+                        <input type="radio" id="woman" name="gender" value="woman">
+                        <label for="woman" class="radio-label">Woman</label>
+                        <input type="radio" id="non-binary" name="gender" value="non-binary">
+                        <label for="non-binary" class="radio-label">Non-binary</label>
+                        <input type="radio" id="something-else" name="gender" value="something-else">
+                        <label for="something-else" class="radio-label">Something else</label>
+                        <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                        <label for="prefer-not-to-say" class="radio-label">Prefer not to say</label>
+                    </div>
+                    <section>
+                        <a href="step3.html" id="third-link" class="styled-button3">Next</a>
+                    </section>
+                </form>
+
+            </main>
+        </div>
+        <footer>
+            <p>Already have an account? <a href="#"> Log in here</a></p>
+
+            <p>This site is protected by reCAPTCHA and the Google</p>
+            <p><span class="underline">Privacy Policy</span> and <span class="underline">Terms of Service</span> apply.</p>
+    </footer>        
+    </div>
+    <script src="../js/user2.js"></script>
+</body>
+</html>

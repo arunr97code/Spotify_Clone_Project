@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="../style/final.css">
+    <link rel="stylesheet" href="../style/content.css">
+    <link rel="stylesheet" href="../style/song.css">
+    <link rel="stylesheet" href="../style/tamil.css">
+    <link rel="icon" href="../icons/spotify-brands-solid (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/613e71a6c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-brands fa-spotify" style="color:aliceblue;"></i>                
+                <span class="tooltip">Spotify</span>
+            </div>
+                <div class="middle">
+                    <a href="final.html">
+                        <div class="home">
+                            <i class="fa-solid fa-house" style="color: aliceblue;"></i>
+                            <span class="tooltip">Home</span>
+                        </div>
+                    </a>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="tooltip1">Search</span>
+                        <input type="text" placeholder="What do you want to play?">
+                        <a href="song.html">
+                            <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H4V2zM1.513 9.37A1 1 0 0 1 2.291 9H21.71a1 1 0 0 1 .978 1.208l-2.17 10.208A2 2 0 0 1 18.562 22H5.438a2 2 0 0 1-1.956-1.584l-2.17-10.208a1 1 0 0 1 .201-.837zM12 17.834c1.933 0 3.5-1.044 3.5-2.333 0-1.289-1.567-2.333-3.5-2.333S8.5 14.21 8.5 15.5c0 1.289 1.567 2.333 3.5 2.333z"></path></svg></span>
+                        </a>
+                        <span class="tooltip2">Browse</span>
+                    </div>
+                </div>
+                <div class="end">
+                    <div class="premium">
+                        Explore Premium
+                    </div>
+                    <div class="install">
+                        <i class="fa-regular fa-circle-down" style="color: aliceblue;"></i>
+                        <span>Install App</span>
+                    </div>
+                    <div class="notify">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="tooltip">What's New</span>
+                    </div>
+                    <div class="profile">
+                        <div>A</div>
+                    </div>
+                </div>
+        </header>
+        <aside>
+            <section class="sec-1">
+                <div>
+                    <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                            <path d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"></path></svg></span>
+                    <span>Your Library</span>        
+                </div>
+                <div>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </section>
+            <section class="sec-2">
+                <p>Create your first playlist</p>
+                <span>It's easy, we'll help you</span>
+                <button>Create playlist</button>
+            </section>
+            <section class="sec-2">
+                <p>Let's find some podcasts to follow</p>
+                <span>We'll keep you updated on new episodes</span>
+                <button>Browse podcasts</button>
+            </section>
+        </aside>
+        <main>
+            <div class="main-tamil">
+                <span>Tamil</span>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Popular Tamil playlists</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/trending now.jpeg" alt="trending songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Trending Now Tamil</h5>
+                            <span>Top Trending Tamil Songs on Social Media Cover - Bad Newz</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/hot hits dhanush.jpeg" alt="dhanush hot hits songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Hot Hits Tamil</h5>
+                            <span>Tune into the Hottest tracks of Kollywood! top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/90s romance prasanth.jpeg" alt="90s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>90s Romance Tamil</h5>
+                            <span>Best Romantic songs from 90s Cover:Jeans</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Latest tamil.jpeg" alt="latest tamil songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Latest Tamil</h5>
+                            <span>New Music from Kollywood. Cover:GOAT</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Dhanush hits.jpeg" alt="tamil hot hits songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Dhanush Hits</h5>
+                            <span>The real VIP of kollywood</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/00s dance.jpeg" alt="00s song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>00s Dance Tamil</h5>
+                            <span>00's music that makes you wanna move Cover songs later 90s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Editors Pick Tamil</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Chitra.jpeg" alt="chithra hits songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Celebrating Chithra: Tamil</h5>
+                            <span>Immerse into the Magical Music of Chinna Kuyil!!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/RADAR tamil.jpeg" alt="radar songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>RADAR Tamil</h5>
+                            <span>Featuring up-and-coming tamil artists from the Social Media top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/mazhai feels.jpeg" alt="all mazhai songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Mazhai Feels..</h5>
+                            <span>Unwind the various 'feels' of Rain</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Yesudas.jpeg" alt="Yesudas songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Endrendum Yesudas</h5>
+                            <span>Celebrate the superhits of the Legend KJ Yesudas!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/lofi vibe.jpeg" alt="tamil love hits songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>LoFi Vibe Tamil</h5>
+                            <span>By Spotify</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/sad melodies.jpeg" alt="sad melodies song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Sad Melodies Tamil</h5>
+                            <span>Take a Breath and Console your Heart! Cover songs 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Simply Kaadhal</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/tamil bae.jpeg" alt="tamil songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil BAE</h5>
+                            <span>Best Love songs, Before Anything Else Cover:Don</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/latest love.jpeg" alt="latest love songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Latest Love Tamil</h5>
+                            <span>Check out the Latest Romantic Tracks. Cover: top 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/gramathu.jpeg" alt="all gramathu songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Gramathu Kaadhal</h5>
+                            <span>Kaadhal - Namma ooru Style!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/purely kaadhal.jpeg" alt="purely kaadhal songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Purely Kaadhal</h5>
+                            <span>All the mushy feels from top romantic hits. Cover from Kollywood!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/mudhal kaadhal.jpeg" alt="tamil love songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Mudhal Kaadhal</h5>
+                            <span>Love at First Sightu!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/iniya iravu.jpeg" alt="romance song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Romance</h5>
+                            <span>The best in romantic tunes from Tamil cinema music that makes you wanna move Cover songs later</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Ithu Namma Party Mix!</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/pullingo.jpeg" alt="pullingo songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Pullingo Pattu</h5>
+                            <span>The Happening Pullingo Songs for you from North Madras Top Trending</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/tamil party time.jpeg" alt="tamil party songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Party Time</h5>
+                            <span>Fast-Paced tunes for Tamil party time! Cover:Tune into the Hottest tracks of Kollywood! top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/thara local.jpeg" alt="thara local songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Thara Local</h5>
+                            <span>Pakka Folk beats from Kollywood! Cover Best thara local songs</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/happy vibes.jpeg" alt="vibes songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Happy Vibes Tamil</h5>
+                            <span>Boost your mood with these uplifting tracks.</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/beast dance.jpeg" alt="tamil hits songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Peppy Romance Tamil</h5>
+                            <span>Get high on these peppy numbers Cover:Beast-The real VIP of kollywood</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/latest dance.jpeg" alt="trending dance song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Latest Dance Tamil</h5>
+                            <span>Dance Machi Dance Cover:Thangalaan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Tamil Indie Scene</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/RADAR tamil.jpeg" alt="radar songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>RADAR Tamil</h5>
+                            <span>Featuring up-and-coming Tamil artists from the Top Trending Tamil Songs on Social Media Cover - Bad Newz</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Tamil Indie.jpeg" alt="tamil indie songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Indie</h5>
+                            <span>Tune into the finest of Tamil Indie music! Cover Hottest tracks of Kollywood! top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/tamil gaana.jpeg" alt="gaana songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Indie:Gaana</h5>
+                            <span>Check out the very own Rhythm of Madras! Cover Best</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Tamil Pop.jpeg" alt="tamil pop songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Pop</h5>
+                            <span>Listen to the pop tracks from your favourite New Music from Kollywood. Cover</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/tamil indie romance.jpeg" alt="tamil indie romance songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Indie:Romance</h5>
+                            <span>Explore the Romantic side of Tamil Indie! Cover</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/hip hop.jpeg" alt="hip hop song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Tamil Indie:Hip Hop</h5>
+                            <span>Featuring today's dopest MCs.Cover:Hip Hop music that makes you wanna move Cover songs later</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Namma Ooru Stars</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/ulaganayagan.jpeg" alt="ulaganayagan songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Ulaga Nayagan Kamal Haasan Hits</h5>
+                            <span>Popular hits of the Kalai</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/vijay hits.jpeg" alt="vijay songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Thalapathy Vijay Hits</h5>
+                            <span>Thalapathy All the way</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/rajini hits.jpeg" alt="rajini songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Super Star Rajinikanth Hits</h5>
+                            <span>Unleashing Thalaivarism</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Dhanush hits.jpeg" alt="dhanush songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Dhanush Hits</h5>
+                            <span>The real VIP of kollywood</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/sk hits.jpeg" alt="Sivakarthikeyan songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Sivakarthikeyan Hits</h5>
+                            <span>Check out the super hits of the rising star SK!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/thala ajith.jpeg" alt="ajith Kumar song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Thala Ajith Kumar Hits</h5>
+                            <span>Thala Aattam All the way!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Indian Instrumental</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/ECHO merun.jpeg" alt="fascinating flute songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>ECHO:Fascinating Flute</h5>
+                            <span>Unwind and restore with the sounds of the Flute Top Trending Tamil Songs on Social Media Cover - Bad Newz</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/ECHO black.jpeg" alt="soulful sitar songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>ECHO:Soulful Sitar</h5>
+                            <span>Interwine with the soul stirring strings of the Tune into the Hottest tracks of Kollywood! top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images2/relaxingragas.jpeg" alt="relaxing ragas songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Relaxing Ragas</h5>
+                            <span>Beautiful bansuri flute and sitar from India.</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images2/hindustani.jpeg" alt="hindustani songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Hindustani Instrumental</h5>
+                            <span>Instrumentals from the North Indian School of New Music from Kollywood. Cover</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images2/carnaticinstrumental.jpeg" alt="carnaticinstrumental songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Carnatic Instrumental</h5>
+                            <span>Instrumental selections from the South Indian</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/ECHO tabla.jpeg" alt="tabla rhythms song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>ECHO:Tabla Rhythms</h5>
+                            <span>Ease out your mind with the rhythmic Tabla from 00's music that makes you wanna move Cover songs later 90s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Raajangam</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/Raaja Rules.jpeg" alt="raaja songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Raaja Rules!</h5>
+                            <span>From Annakili to Viduthalai  - all the Top Trending Tamil Songs on Social Media Cover - Bad Newz</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/80s dance.jpeg" alt="80s dance songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>80s Dance Tamil</h5>
+                            <span>Groove to the peppy numbers from the 80s! Tune into the Hottest tracks of Kollywood! top trending songs 2024</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/romantic raaja.jpeg" alt="romantic raaja songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Romantic Raaja</h5>
+                            <span>The best Love songs from "The Raaja"</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/raaja rules 80s.jpeg" alt="raaja rules 80s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Raaja Rules 80s</h5>
+                            <span>Here comes the Maestro with his best of 80s!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/two good.jpeg" alt="two legend songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Two Good SPB Ilaiyaraaja</h5>
+                            <span>Tamil Superhits from the 90s-The OGs of kollywood</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/80s sad.jpeg" alt="80s sad song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>80s Sad Tamil</h5>
+                            <span>Enbathugalin soga geethangal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Featured Artists Tamil</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/sid.jpeg" alt="sid songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Soulful Sid Sriram</h5>
+                            <span>Enjoy the Magical Voice of Sid</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/rahman ruling 90s.jpeg" alt="rahman songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Rahman Ruling 00s</h5>
+                            <span>Spellbinding Tamil hits of ARR from 2000s</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/harris.jpeg" alt="harris songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>ROmantic Harris</h5>
+                            <span>Mesmerising love hits of Harris Jayaraj.</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/aniruth.jpeg" alt="aniruth songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Romantic Aniruth</h5>
+                            <span>Enjoy the romantic side of Ani</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/spb.jpeg" alt="spb songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Endrendrum SPB</h5>
+                            <span>Celebrate the Superhits of our own Legend SPB!!!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/yuvan.jpeg" alt="yuvan song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>Romantic Yuvan</h5>
+                            <span>The Young Maestro is Master at it &#60;3 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-tamil-album">
+                <div class="inner-main1">
+                    <h2>Decades Delight</h2>
+                    <p>Show all</p>
+                </div>
+                <div class="inner-main2">
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 10s.jpeg" alt="all 10s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All Out 10s Tamil</h5>
+                            <span>Best of 2010s from Kollywood! Cover:Vijay</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 00s ajith.jpeg" alt="ajith songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All out 00s Tamil</h5>
+                            <span>Best of 2000s from Kollywood Cover:Ajith Tune into the Hottest tracks of Kollywood!</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 90s.jpeg" alt="allout90s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All Out 90s Tamil</h5>
+                            <span>Best of 90s from kollywood Cover:KamalHaasan songs from 90s</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 80s.jpeg" alt="allout 80s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All Out 80s Tamil</h5>
+                            <span>Best of 80s from kollywood Cover:Rajini</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 70s.jpeg" alt="70s songs">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All Out 70s Tamil</h5>
+                            <span>Best of 70s from kollywood Cover:MGR</span>
+                        </div>
+                    </div>
+                    <div class="main2-song">
+                        <div class="song-profile">
+                            <img src="../images3/all out 60s.jpeg" alt="60s song">
+                            <div class="play">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <h5>All Out 60s Tamil</h5>
+                            <span>Best of 60s from kollywood Cover:Sivaji 00's music that makes you wanna move songs later 60s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-div">
+                <div class="foot1">
+                    <div class="foot1-info">
+                        <h4>Company</h4>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the Record</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Communities</h4>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Useful links</h4>
+                        <p>Support</p>
+                        <p>Free Mobile App</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Spotify Plans</h4>
+                        <p>Premium Individual</p>
+                        <p>Premium Duo</p>
+                        <p>Premium Family</p>
+                        <p>Premium Student</p>
+                        <p>Spotify Free</p>
+                    </div>
+                    <div class="foot1-social">
+                        <div class="social-info"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="social-info"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="social-info"><i class="fa-brands fa-facebook"></i></div>
+                    </div>
+                </div>
+                <div class="foot2"></div>
+                <div class="foot3">
+                    <div class="foot3-info">
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="foot3-info">
+                        <span id="copyright"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="foot-sec1"></section>
+            <section class="foot-sec2">
+                <div class="foot-inner1">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="foot-inner2">
+                    <span>-:--</span>
+                    <div class="line">
+                        <div class="inner-line"></div>
+                    </div>
+                    <span>-:--</span>
+                </div>
+            </section>
+            <section class="foot-sec3">
+                <div class="foot-inner">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-bars">
+                    </i>
+                    <i class="fa-solid fa-computer"></i>
+                    <div>
+                        <i class="fa-solid fa-volume-low"></i>
+                        <input type="range" min="0" max="1" oninput="rangeUpdate(this)">
+                    </div>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="../js/new.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --black: #121212;
+    --aliceblue: aliceblue;
+    --aliceblue2: rgba(240, 248, 255, 0.9);
+    --white: white;
+    --grey: grey;
+    --grey2: rgba(128, 128, 128, 0.8);
+    --red: red;
+    --tomato: tomato;
+    --green: #1ed760;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+/* basic style*/
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+/* header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+    
+.signup-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+}
+.main-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+       
+}
+
+.signup-sec{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    margin-bottom: 30px;
+}
+.inner-signup a{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+/* main style */
+.logo{
+    margin: 30px 0px 20px;
+    position: relative;
+}
+.logo .fa-spotify{
+    font-size: 2.65rem;
+    
+}
+.logo .tooltip{
+    color: var(--white);
+    font-size: 0.77rem;
+    font-weight: 250;
+    background-color: rgba(101, 100, 100, 0.663);
+    border: 1.59px solid var(--aliceblue);
+    padding: 3.5px 5px;
+    position: absolute;
+    bottom: -18px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+
+}
+.logo:hover .tooltip{
+    opacity: 1;
+}
+/*  */
+.main-sec h1:nth-child(2){
+    margin-bottom: 35px;
+}
+.main-sec h1{
+    font-size: 2.7rem;
+    letter-spacing: -1.9px;
+    word-spacing: -1.5px;
+    line-height: 3.7rem;
+}
+.main-sec h1:first-of-type::first-letter{
+    font-size: 3.3rem;
+}
+/*  */
+form{
+    width: 320px;
+}
+form label{
+    font-size: 0.85rem;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+form input[type="email"]{
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: var(--black);
+    cursor:text;
+    caret-color: var(--white);
+    font-size: 1.1rem;
+    color: var(--aliceblue);
+    margin-bottom: 5px;
+    transition: all 0.1s ease;
+
+    
+
+}
+form input::placeholder{
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+
+}
+/* form input[type="email"]:active{
+    border: 1px solid var(--aliceblue2);
+
+} */
+form input[type="email"]:hover{
+    
+    border: 1.6px solid var(--aliceblue);
+}
+
+form input[type="email"]:invalid:not(:placeholder-shown){
+    border: 0.1rem solid var(--red);
+}
+form input[type="email"]:invalid:focus{
+    border: 0.1rem solid var(--red);
+}       
+form .error-message{
+    color: var(--tomato);
+    font-size: 0.84rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    position: relative;
+    letter-spacing: -0.5px;
+    display: none;   
+}
+.error-message .fa-circle-exclamation{
+    align-self: flex-start;
+    padding: 5px 5px 5px 0;
+    font-size: 0.9rem;
+}
+form a{
+    font-size: 0.82rem;
+    color: var(--green);
+    letter-spacing: -0.3px;
+    margin-bottom: 20px;
+}
+form a:focus{
+    text-decoration-thickness: 2.5px;
+    
+}
+form a, input[type="submit"]{
+    outline: none;
+}
+form a:nth-of-type(2){
+    background-color: var(--green);
+    /* border: 14px solid; */
+    padding: 12px 32px;
+    font-size: 0.98rem;
+    letter-spacing: -0.2px;
+    font-weight: 650;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 320px;
+    color: var(--black);
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+}
+form a:nth-of-type(2):hover{
+    background-color: rgba(30,215,106,0.7);
+}   
+/*  */
+.middle{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-bottom: 31.5px; 
+}
+
+.line{
+    flex: 1;
+    border: 0.1px solid var(--grey2);
+    width: 139px;
+    margin: 0 11.5px;
+}
+/*  */
+.fa-brands{
+    color: #ffffff; 
+    font-size: 25px;
+}
+.inner-signup{
+    border: 1px solid var(--grey2);
+    margin-bottom: 7.5px;
+    padding: 12px;
+    width: 320px;
+    border-radius: 30px;
+}
+.inner-signup a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.inner-signup a p{
+    flex: 1;
+    font-size: 0.95rem;
+    color: var(--aliceblue);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.1px;
+}
+.inner-signup:hover{
+    border: 1px solid var(--aliceblue);
+}
+/*  */
+footer p{
+    color: var(--grey);
+
+}
+footer a {
+    color: var(--aliceblue);
+}
+footer p:nth-child(1){
+    font-size: 0.92rem;
+    word-spacing: -1.1px;
+    margin-bottom: 30px;
+}
+
+.underline{
+    /* border-bottom: 1px solid; */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* text-underline-offset: 2px;  */
+
+}
+footer p:nth-child(2), footer p:nth-child(3){
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+    word-spacing: -0.3px;
+    position: relative;
+    bottom: -15px;
+
+}

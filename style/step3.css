@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --black: #121212;
+    --aliceblue: aliceblue;
+    --aliceblue2: rgba(240, 248, 255, 0.9);
+    --white: white;
+    --grey: grey;
+    --grey2: rgba(128, 128, 128, 0.8);
+    --red: red;
+    --tomato: tomato;
+    --green: #1ed760;
+    --background: linear-gradient(to right, var(--green) 30%, var(--grey) 70%);
+}
+body{
+    background-color: var(--black);
+    color: var(--aliceblue);
+    font-family: "Poppins", sans-serif;
+
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+}
+.signup-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* logo */
+
+.logo{
+    margin: 30px 0px 25px;
+    position: relative;
+
+}
+.logo .fa-spotify{
+    font-size: 2.65rem;
+    
+}
+.logo .tooltip{
+    color: var(--white);
+    font-size: 0.77rem;
+    font-weight: 250;
+    background-color: rgba(101, 100, 100, 0.663);
+    border: 1.59px solid var(--aliceblue);
+    padding: 3.5px 5px;
+    position: absolute;
+    bottom: -18px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+
+}
+.logo:hover .tooltip{
+    opacity: 1;
+}
+
+/*  */
+
+.progress-bar{
+    flex: 1;
+    display: flex;
+    /* border: 1.6px solid var(--green); */
+    width: 430px;
+    /* background: var(--background); */
+    margin-bottom: 15px;
+
+}
+.progress-left{
+    
+    border: 1.59px solid var(--green);
+    width: 290px;
+}
+.progress-right{
+    border: 1.59px solid var(--green);
+    width: 140px;
+}
+/*  */
+.arrow-sec{
+    display: flex;
+    width: 430px;
+    align-items: center;
+    
+}
+.arrow-sec .fa-chevron-left{
+    font-size: 1.4rem;
+    color: var(--grey);
+    padding-left: 20px;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+.arrow-sec .fa-chevron-left:hover{
+    color: var(--aliceblue);
+    transform: scale(1.1);
+}
+.arrow-inner{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    line-height: 1rem;
+    
+}
+.arrow-inner p:nth-child(1){
+    color: var(--grey);
+    font-size: 0.95rem;
+    word-spacing: -1.6px;
+}
+.arrow-inner p:nth-child(2){
+    font-weight: 630;
+    font-size: 0.91rem;
+    word-spacing: -0.5px;
+}
+.arrow-inner p:nth-child(2)::first-letter{
+    font-size: 15.5px;
+    
+}
+/*  */
+main{
+    display: flex;
+    margin-top: 18px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+.divBox{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff1a;
+    padding: 18px 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+
+.divBox label{
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 30px;
+    line-height: 20px;
+    display: inline-block;
+    word-spacing: -0.5px;
+    font-weight: 400;
+
+
+
+}
+
+/* Hide the default checkbox */
+.divBox input[type="checkbox"] {
+    align-self:flex-start;
+    margin: 5px 10px 0px 0px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+/* Create a custom checkbox */
+/* .divBox label {
+    
+    /* cursor: pointer; */
+    /* font-size: 14px; */
+
+
+.divBox label:before {
+    content: "";
+    position: absolute;
+    top: 3px;   
+    left: 3px;
+    height: 14px;
+    width: 14px;
+    background-color: var(--black);
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* When the checkbox is checked, style the custom checkbox */
+.divBox input[type="checkbox"]:checked + label:before {
+    background-color: var(--green); /* Spotify Green */
+    border-color: var(--green);
+}
+
+/* Add a checkmark when checked */
+.divBox label:after {
+    content: "";
+    position: absolute;
+    left: 8.5px;
+    top: 5px;
+    width: 3.59px;
+    height: 8px;
+    border: solid var(--black);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+    transition: display 0.2s;
+}
+
+.divBox input[type="checkbox"]:checked + label:after {
+    display: block;
+}
+/*  */
+section p{
+    font-size: 0.825rem;
+    word-spacing: -1.4px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+section p span{
+    cursor: pointer;
+    color: var(--green);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+form section p:nth-child(2){
+    margin-bottom: 33px;
+}
+/*  */
+
+section:nth-of-type(2) a{
+    background-color: var(--green);
+    padding: 12px 32px;
+    font-size: 0.98rem;
+    letter-spacing: -0.2px;
+    font-weight: 650;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 325px;
+    color: var(--black);
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    display: inline-block;
+}
+section:nth-of-type(2) a:hover{
+background-color: rgba(30,215,106,0.7);
+}
+
+/*  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer p{
+    color: var(--grey);
+
+}
+footer a {
+    color: var(--aliceblue);
+}
+footer p:nth-child(1){
+    font-size: 0.92rem;
+    word-spacing: -1.1px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.underline{
+    /* border-bottom: 1px solid; */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* text-underline-offset: 2px;  */
+
+}
+footer p:nth-child(2), footer p:nth-child(3){
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+    word-spacing: -0.5px;
+    position: relative;
+    top: 100px;
+
+}
+

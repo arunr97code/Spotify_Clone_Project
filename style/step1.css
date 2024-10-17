@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --black: #121212;
+    --aliceblue: aliceblue;
+    --aliceblue2: rgba(240, 248, 255, 0.9);
+    --white: white;
+    --grey: grey;
+    --grey2: rgba(128, 128, 128, 0.8);
+    --red: red;
+    --tomato: tomato;
+    --green: #1ed760;
+    --background: linear-gradient(to right, var(--green) 30%, var(--grey) 70%);
+}
+body{
+    background-color: var(--black);
+    color: var(--aliceblue);
+    font-family: "Poppins", sans-serif;
+
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.signup-landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* logo */
+
+.logo{
+    margin: 30px 0px 25px;
+    position: relative;
+
+}
+.logo .fa-spotify{
+    font-size: 2.65rem;
+    
+}
+.logo .tooltip{
+    color: var(--white);
+    font-size: 0.77rem;
+    font-weight: 250;
+    background-color: rgba(101, 100, 100, 0.663);
+    border: 1.59px solid var(--aliceblue);
+    padding: 3.5px 5px;
+    position: absolute;
+    bottom: -18px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+
+}
+.logo:hover .tooltip{
+    opacity: 1;
+}
+
+/*  */
+
+.progress-bar{
+    flex: 1;
+    display: flex;
+    /* border: 1.6px solid var(--green); */
+    width: 430px;
+    /* background: var(--background); */
+    margin-bottom: 15px;
+
+}
+.progress-left{
+    
+    border: 1.59px solid var(--green);
+    width: 150px;
+}
+.progress-right{
+    border: 1.59px solid var(--grey);
+    width: 280px;
+}
+/*  */
+.arrow-sec{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+}
+.arrow-sec .fa-chevron-left{
+    font-size: 1.4rem;
+    color: var(--grey);
+    padding-left: 22px;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+.arrow-sec .fa-chevron-left:hover{
+    color: var(--aliceblue);
+    transform: scale(1.1);
+}
+.arrow-inner{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    line-height: 1.5rem;
+    
+}
+.arrow-inner p:nth-child(1){
+    color: var(--grey);
+    font-size: 0.95rem;
+    word-spacing: -1.6px;
+}
+.arrow-inner p:nth-child(2){
+    font-weight: 630;
+    font-size: 0.91rem;
+    word-spacing: -0.5px;
+}
+.arrow-inner p:nth-child(2)::first-letter{
+    font-size: 15.5px;
+    
+}
+/*  */
+main{
+    display: flex;
+    /* width: 100%; */
+    margin-top: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    /* position: relative; */
+}
+label{
+    font-size: 0.85rem;
+    font-weight: 630;
+    margin-bottom:10px;
+}
+form input[type='password']{
+    padding: 13px;
+    background-color: var(--black);
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    cursor: text;
+    caret-color: var(--white);
+    color: var(--aliceblue);
+    font-size: 1.1rem;
+    transition: all 0.1s ease;
+
+    
+}
+form input[type='password']:hover{
+    border-color: var(--aliceblue);
+    box-shadow:0 0 0 0.1rem var(--aliceblue);
+    /* border: 0.1rem solid var(--aliceblue); */
+}
+ /* form input[type="password"]:invalid:not(:placeholder-shown){
+    border-color: var(--red);
+    box-shadow: 0 0 0 1px var(--red);
+} */
+.valid{
+    border: 2px solid var(--green);
+}
+form input[type="password"]:invalid:focus{
+    /* border-color: var(--red);
+    box-shadow: 0 0 0 0.1rem var(--red); */
+    border: 0.1rem solid var(--red);
+} 
+
+
+.invalid-border{
+    border-color: var(--red);
+    box-shadow:0 0 0 0.1rem var(--red);
+    /* border: 2px solid var(--red); */
+
+}
+.fa-eye-slash{
+    width: 30px;
+    font-size: 1.35rem;
+    color: var(--grey);
+    position: relative;
+    bottom: 35px;
+    left: 293px;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+.fa-eye-slash:hover{
+    color: var(--aliceblue);
+}
+section p:nth-child(1){
+    font-size: 0.83rem;
+    font-weight: 610;
+    word-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.password-check{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.pass-inner{
+    display: flex;
+    font-size: 0.82rem;
+    padding-bottom: 6.5px;
+    align-items: center;
+    word-spacing: -1px;
+
+}
+.pass-inner span{
+    width: 14.1px;
+    height: 13.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.6px solid var(--grey);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 0;
+
+
+
+}
+.pass-inner .fa-check{
+    font-size: 0.5rem;
+    background-color: var(--green);
+    border-radius: 50%;
+    padding: 2.9px 3.4px;
+    display: none;
+}
+
+/*  */
+
+
+form a, input[type="submit"]{
+    outline: none;
+}
+form a:nth-of-type(1){
+    background-color: var(--green);
+    /* border: 14px solid; */
+    padding: 12px 32px;
+    /* padding: 14.5px; */
+    font-size: 0.98rem;
+    letter-spacing: -0.2px;
+    font-weight: 650;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 335px;
+    color: var(--black);
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+}
+form a:nth-of-type(1):hover{
+    background-color: rgba(30,215,106,0.7);
+}   
+/* form a{
+    background-color: var(--green);
+    border: 1px solid;
+    padding: 14.5px;
+    font-size: 0.98rem;
+    letter-spacing: -0.2px;
+    font-weight: 750;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-decoration: none;
+
+} */
+
+form input[type="submit"]:hover{
+    background-color: rgba(30,215,106,0.7);
+}
+/*  */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer p{
+    color: var(--grey);
+
+}
+footer a {
+    color: var(--aliceblue);
+}
+footer p:nth-child(1){
+    font-size: 0.92rem;
+    word-spacing: -1.1px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.underline{
+    /* border-bottom: 1px solid; */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* text-underline-offset: 2px;  */
+
+}
+footer p:nth-child(2), footer p:nth-child(3){
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+    word-spacing: -0.5px;
+    position: relative;
+    top: 260px;
+
+}
+

@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background: #000;
+    --background-grey: #121212;
+    --aliceblue: aliceblue;
+    --aliceblue2: rgba(240, 248, 255, 0.9);
+    --white: white;
+    --grey: grey;
+    --grey2: rgba(128, 128, 128, 0.8);
+    --red: red;
+    --tomato: tomato;
+    --green: #1ed760;
+    --newgrey: #2a2a2a;
+    --searchbar:#ffffff24;
+    --library: #ffffff0d;   
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: var(--aliceblue);
+}
+/*  */
+
+main .browse{
+    margin: 75px 15px 25px;
+    /* margin-top: px;
+    margin-left: 20px; */
+    
+}
+
+.browse span{
+    font-size: 1.49rem;
+    font-weight: 600;
+    word-spacing: -1.9px;
+    cursor: pointer;
+
+}
+.browse span:hover{
+    text-decoration: underline;
+}
+/*  */
+main .song-container{
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(autofit, minmax(270px, 1fr)); */
+    grid-template-rows: auto;
+    column-gap: 15px;
+    row-gap: 20px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.song-container .song-detail{
+    /* border: 1px solid; */
+    width: 260px;
+    height: 160px;
+    border-radius: 8px;
+    padding-top: 15px;
+    /* padding-left: 15px; */
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.song-detail span{
+    font-size: 1.3rem;
+    font-weight: 650;
+    word-spacing: -1.5px;
+    letter-spacing: -0.7px;
+    /* border: 1px solid; */
+    width: 140px;
+    text-wrap: wrap;
+    margin-left: 15px;
+    /* position: fixed; */
+    /* opacity: 0; */
+}
+.song-detail a{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    
+}
+  
+.song-detail a img{
+    width: 100%;
+    height: 100%;   
+    position: relative;
+    bottom: -25px;
+    right: -20px;
+    border-radius: 5px;
+    transform: rotate(30deg);
+    /* overflow: hidden; */
+    box-shadow: 0 0 6px black;
+    
+    
+}
+
+.song-detail:nth-child(1){
+    background-color: rgb(220, 20, 140);
+}
+.song-detail:nth-child(2){
+    background-color: rgb(0, 100, 80);
+}
+.song-detail:nth-child(3){
+    background-color: rgb(132, 0, 231);
+
+}
+.song-detail:nth-child(4){
+    background-color: rgb(30, 50, 100);
+
+}
+.song-detail:nth-child(5){
+    background-color: rgb(96, 129, 8);
+
+}
+.song-detail:nth-child(6){
+    background-color: rgb(220, 20, 140);
+
+}
+.song-detail:nth-child(7){
+    background-color: rgb(176, 40, 151);
+
+}
+.song-detail:nth-child(8){
+    background-color: rgb(165, 103, 82);
+
+}
+.song-detail:nth-child(9){
+    background-color: rgb(186, 93, 7);
+
+}
+.song-detail:nth-child(10){
+    background-color: rgb(13, 115, 236);
+
+}
+.song-detail:nth-child(11){
+    background-color: rgb(142, 102, 172);
+
+}
+.song-detail:nth-child(12){
+    background-color: rgb(225, 51, 0);
+
+}
+.song-detail:nth-child(13){
+    background-color: rgb(119, 119, 119);
+
+}
+.song-detail:nth-child(14){
+    background-color: rgb(141, 103, 171);
+
+}
+.song-detail:nth-child(15){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(16){
+    background-color: rgb(225, 51, 0);
+
+}
+.song-detail:nth-child(17){
+    background-color: rgb(39, 133, 106);
+
+}
+.song-detail:nth-child(18){
+    background-color: rgb(119, 119, 119);
+
+}
+.song-detail:nth-child(19){
+    background-color: rgb(141, 103, 171);
+
+}
+.song-detail:nth-child(20){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(21){
+    background-color: rgb(233, 20, 41);
+
+}
+.song-detail:nth-child(22){
+    background-color: rgb(220, 20, 140);
+
+}
+.song-detail:nth-child(23){
+    background-color: rgb(176, 40, 151);
+
+}
+.song-detail:nth-child(24){
+    background-color: rgb(225, 17, 140);
+
+}
+.song-detail:nth-child(25){
+    background-color: rgb(141, 103, 171);
+
+}
+.song-detail:nth-child(26){
+    background-color: rgb(195, 150, 135);
+
+}
+.song-detail:nth-child(27){
+    background-color: rgb(165, 103, 82);
+
+}
+.song-detail:nth-child(28){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(29){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(30){
+    background-color: rgb(175, 40, 150);
+
+}
+.song-detail:nth-child(31){
+    background-color: rgb(176, 98, 57);
+
+}
+.song-detail:nth-child(32){
+    background-color: rgb(232, 17, 91);
+
+}
+.song-detail:nth-child(33){
+    background-color: rgb(230, 30, 50);
+
+}
+.song-detail:nth-child(34){
+    background-color: rgb(119, 119, 119);
+
+}
+.song-detail:nth-child(35){
+    background-color: rgb(20, 138, 8);  
+
+}
+.song-detail:nth-child(36){
+    background-color: rgb(20, 138, 8);  
+
+}
+.song-detail:nth-child(37){
+    background-color: rgb(255, 0, 144);
+
+}
+.song-detail:nth-child(38){
+    background-color: rgb(0, 100, 80);
+
+}
+.song-detail:nth-child(39){
+    background-color: rgb(30, 50, 100);
+
+}
+.song-detail:nth-child(40){
+    background-color: rgb(125, 75, 50);
+
+}
+.song-detail:nth-child(41){
+    background-color: rgb(83, 122, 161);
+
+}
+.song-detail:nth-child(42){
+    background-color: rgb(119, 119, 119);
+
+}
+.song-detail:nth-child(43){
+    background-color: rgb(81, 121, 161);
+
+}
+.song-detail:nth-child(44){
+    background-color: rgb(216, 64, 0);
+
+}
+.song-detail:nth-child(45){
+    background-color: rgb(186, 93, 7);
+
+}
+.song-detail:nth-child(46){
+    background-color: rgb(233, 20, 41);
+
+}
+.song-detail:nth-child(47){
+    background-color: rgb(141, 103, 171);
+
+}
+.song-detail:nth-child(48){
+    background-color: rgb(125, 75, 50);
+
+}
+.song-detail:nth-child(49){
+    background-color: rgb(188, 89, 0);
+
+}
+.song-detail:nth-child(50){
+    background-color: rgb(165, 103, 82);
+
+}
+.song-detail:nth-child(51){
+    background-color: rgb(176, 98, 57);
+
+}
+.song-detail:nth-child(52){
+    background-color: rgb(220, 20, 140);
+
+}
+.song-detail:nth-child(53){
+    background-color: rgb(13, 115, 236);
+
+}
+.song-detail:nth-child(54){
+    background-color: rgb(13, 115, 236);
+
+}
+.song-detail:nth-child(55){
+    background-color: rgb(175, 40, 150);
+
+}
+.song-detail:nth-child(56){
+    background-color: rgb(230, 30, 50);
+
+}
+.song-detail:nth-child(57){
+    background-color: rgb(20, 138, 8);  
+
+}
+.song-detail:nth-child(58){
+    background-color: rgb(230, 30, 50);
+
+}
+.song-detail:nth-child(59){
+    background-color: rgb(186, 93, 7);
+
+}
+.song-detail:nth-child(60){
+    background-color: rgb(225, 51, 0);
+
+}
+.song-detail:nth-child(61){
+    background-color: rgb(20, 138, 8);  
+
+}
+.song-detail:nth-child(62){
+    background-color: rgb(13, 114, 237);
+
+}
+.song-detail:nth-child(63){
+    background-color: rgb(13, 115, 236);
+
+}
+.song-detail:nth-child(64){
+    background-color: rgb(140, 25, 50);
+
+}
+.song-detail:nth-child(65){
+    background-color: rgb(140, 25, 50);
+
+}
+.song-detail:nth-child(66){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(67){
+    background-color: rgb(71, 125, 149);
+
+}
+.song-detail:nth-child(68){
+    background-color: rgb(230, 30, 50);
+
+}
+.song-detail:nth-child(69){
+    background-color: rgb(245, 155, 35);
+
+}
+.song-detail:nth-child(70){
+    background-color: rgb(13, 115, 236);
+}
+.song-detail:nth-child(71){
+    background-color: rgb(255, 70, 50);
+
+}
+.song-detail:nth-child(72){
+    background-color: rgb(225, 17, 140);
+
+}
+.song-detail:nth-child(73){
+    background-color: rgb(232, 17, 91);
+
+}

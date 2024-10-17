@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="../style/final.css">
+    <link rel="stylesheet" href="../style/content.css">
+    <link rel="stylesheet" href="../style/song.css">
+    <link rel="icon" href="../icons/spotify-brands-solid (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/613e71a6c8.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-brands fa-spotify" style="color:aliceblue;"></i>                
+                <span class="tooltip">Spotify</span>
+            </div>
+                <div class="middle">
+                    <a href="final.html"><div class="home">
+                        <i class="fa-solid fa-house" style="color: aliceblue;"></i>
+                        <span class="tooltip">Home</span>
+                    </div></a>
+                    
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="tooltip1">Search</span>
+                        <input type="text" placeholder="What do you want to play?">
+                        <a href="#">
+                            <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw"><svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H4V2zM1.513 9.37A1 1 0 0 1 2.291 9H21.71a1 1 0 0 1 .978 1.208l-2.17 10.208A2 2 0 0 1 18.562 22H5.438a2 2 0 0 1-1.956-1.584l-2.17-10.208a1 1 0 0 1 .201-.837zM12 17.834c1.933 0 3.5-1.044 3.5-2.333 0-1.289-1.567-2.333-3.5-2.333S8.5 14.21 8.5 15.5c0 1.289 1.567 2.333 3.5 2.333z"></path></svg></span>
+                        </a>
+                        <span class="tooltip2">Browse</span>
+                    </div>
+                </div>
+                <div class="end">
+                    <div class="premium">
+                        Explore Premium
+                    </div>
+                    <div class="install">
+                        <i class="fa-regular fa-circle-down" style="color: aliceblue;"></i>
+                        <span>Install App</span>
+                    </div>
+                    <div class="notify">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="tooltip">What's New</span>
+                    </div>
+                    <div class="profile">
+                        <div>A</div>
+                    </div>
+                </div>
+        </header>
+        <aside>
+            <section class="sec-1">
+                <div>
+                    <span aria-hidden="true" class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                            <path d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"></path></svg></span>
+                    <span>Your Library</span>        
+                </div>
+                <div>
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </section>
+            <section class="sec-2">
+                <p>Create your first playlist</p>
+                <span>It's easy, we'll help you</span>
+                <button>Create playlist</button>
+            </section>
+            <section class="sec-2">
+                <p>Let's find some podcasts to follow</p>
+                <span>We'll keep you updated on new episodes</span>
+                <button>Browse podcasts</button>
+            </section>
+
+        </aside>
+        <main>
+           <div class="browse">
+                <span>Browse all</span>
+            </div>
+
+            <div class="song-container">
+                <div class="song-detail">
+                    <span>Music</span>
+                    <a href="#">
+                        <img src="../images2/album1.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Podcasts</span>
+                    <a href="#">
+                        <img src="../images2/album2.jpeg" alt="Podcasts">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Live Events</span>
+                    <a href="#">
+                        <img src="../images2/rediscover.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Made For You</span>
+                    <a href="#">
+                        <img src="../images2/nidraalbum.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>New Releases</span>
+                    <a href="#">
+                        <img src="../images2/nmfriday.jpeg" alt="new Releases">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Hindi</span>
+                    <a href="#">
+                        <img src="../images2/bollywoodcentralalbum.jpeg" alt="hindi songs">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Punjabi</span>
+                    <a href="#">
+                        <img src="../images2/punjabi.jpeg" alt="punjabi">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Tamil</span>
+                    <a href="tamil.html">
+                        <img src="../images2/kollywood.jpeg" alt="tamil">
+                    </a>
+                </div>
+        
+                <div class="song-detail">
+                    <span>Telugu</span>
+                    <a href="#">
+                        <img src="../images2/teluguhits.jpeg" alt="teluguhits">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Podcast Charts</span>
+                    <a href="#">
+                        <img src="../images2/recording.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Carnatic</span>
+                    <a href="#">
+                        <img src="../images2/carnatic gems.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Video Podcasts</span>
+                    <a href="#">
+                        <img src="../images2/joe rogan.jpeg" alt="Video podcasts">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Business $ Technology</span>
+                    <a href="#">
+                        <img src="../images2/finance3.jpeg" alt="business">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Charts</span>
+                    <a href="#">
+                        <img src="../images1/topsongglobal.jpg" alt="Charts">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Malayam</span>
+                    <a href="#">
+                        <img src="../images2/malayalamhits.jpeg" alt="malayalamhits">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Bhojpuri</span>
+                    <a href="#">
+                        <img src="../images2/bhojpurihits.jpeg" alt="bhojpurihits">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Summer</span>
+                    <a href="#">
+                        <img src="../images2/summerhits.jpeg" alt="summerhits">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Ghazals</span>
+                    <a href="#">
+                        <img src="../images2/goldenghazals.jpeg" alt="Ghazals">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Discover</span>
+                    <a href="#">
+                        <img src="../images1/topsongindia.jpg" alt="discover">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Pop</span>
+                    <a href="#">
+                        <img src="../images2/todaystophits.jpeg" alt="Pop">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Indie</span>
+                    <a href="#">
+                        <img src="../images2/allnewindie.jpeg" alt="allnewindie">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Love</span>
+                    <a href="#">
+                        <img src="../images2/timeless.jpeg" alt="love">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Trending</span>
+                    <a href="#">
+                        <img src="../images2/bigoninternet.jpeg" alt="trending">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Mood</span>
+                    <a href="#">
+                        <img src="../images2/moodbooster.jpeg" alt="Mood">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Party</span>
+                    <a href="#">
+                        <img src="../images2/dance party.jpeg" alt="Party">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Devotional</span>
+                    <a href="#">
+                        <img src="../images2/dhayanam.jpeg" alt="Devotional">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Decades</span>
+                    <a href="#">
+                        <img src="../images2/allout90s.jpeg" alt="decades">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Hip-Hop</span>
+                    <a href="#">
+                        <img src="../images2/rapcaviar.jpeg" alt="Hip-Hop">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Dance/Electronics</span>
+                    <a href="#">
+                        <img src="../images2/mint.jpeg" alt="dance or Electronics">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Student</span>
+                    <a href="#">
+                        <img src="../images2/graduation.jpeg" alt="Student">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Chill</span>
+                    <a href="#">
+                        <img src="../images2/chillvibes.jpeg" alt="chillvibes">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Gaming</span>
+                    <a href="#">
+                        <img src="../images2/topgamingtracks.jpeg" alt="gaming">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>K-pop</span>
+                    <a href="#">
+                        <img src="../images2/Kpop.jpeg" alt="K-pop">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Workout</span>
+                    <a href="#">
+                        <img src="../images2/cardio.jpeg" alt="Workout">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>RADAR</span>
+                    <a href="#">
+                        <img src="../images2/radar global.jpeg" alt="radar global">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>EQUAL</span>
+                    <a href="#">
+                        <img src="../images2/equal.jpeg" alt="equal">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Fresh Finds</span>
+                    <a href="#">
+                        <img src="../images2/freshfinds.jpeg" alt="freshfinds">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Rock</span>
+                    <a href="#">
+                        <img src="../images2/marrow.jpeg" alt="rock">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Sleep</span>
+                    <a href="#">
+                        <img src="../images2/sleep.jpeg" alt="sleep">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Indian Classical</span>
+                    <a href="#">
+                        <img src="../images2/indianclassical.jpeg" alt="indianclassical">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Instrumental</span>
+                    <a href="#">
+                        <img src="../images2/peacefulguitar.jpeg" alt="Instrumental">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Spotify Singles</span>
+                    <a href="#">
+                        <img src="../images2/singleshits.jpeg" alt="singleshits">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>At Home</span>
+                    <a href="#">
+                        <img src="../images2/stressrelief.jpeg" alt="at home">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Country</span>
+                    <a href="#">
+                        <img src="../images2/hotcountry.jpeg" alt="Country">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>R&B</span>
+                    <a href="#">
+                        <img src="../images2/RNB.jpeg" alt="R&B">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Metal</span>
+                    <a href="#">
+                        <img src="../images2/kickassmetal.jpeg" alt="Metal">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Jazz</span>
+                    <a href="#">
+                        <img src="../images2/stateofJazz.jpeg" alt="Jazz">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Classical</span>
+                    <a href="#">
+                        <img src="../images2/classicalessential.jpeg" alt="classicalessential">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Folk & Acoustic</span>
+                    <a href="#">
+                        <img src="../images2/freshfolk.jpeg" alt="folk & acoustic">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Focus</span>
+                    <a href="#">
+                        <img src="../images2/deepfocus.jpeg" alt="focus">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Disney</span>
+                    <a href="#">
+                        <img src="../images2/disneyhits.jpeg" alt="disney">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Soul</span>
+                    <a href="#">
+                        <img src="../images2/funk&soul.jpeg" alt="soul">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Kids & Family</span>
+                    <a href="#">
+                        <img src="../images2/popforkids.jpeg" alt="kids & Family">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Anime</span>
+                    <a href="#">
+                        <img src="../images2/animenow.jpeg" alt="Anime">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>TV & Movies</span>
+                    <a href="#">
+                        <img src="../images2/HBOmax.jpeg" alt="TV&Movies">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Punk</span>
+                    <a href="#">
+                        <img src="../images2/todayspunk.jpeg" alt="punk">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Ambient</span>
+                    <a href="#">
+                        <img src="../images2/ambient.jpeg" alt="ambient">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Blues</span>
+                    <a href="#">
+                        <img src="../images2/gotblues.jpeg" alt="Blues">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Cooking & Dining</span>
+                    <a href="#">
+                        <img src="../images2/dinnerwithfriends.jpeg" alt="Cooking & Dining">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Alternative</span>
+                    <a href="#">
+                        <img src="../images2/altnow.jpeg" alt="Alternative">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Wellness</span>
+                    <a href="#">
+                        <img src="../images2/zengarden.jpeg" alt="music">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Travel</span>
+                    <a href="#">
+                        <img src="../images2/classicroad.jpeg" alt="travel">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Caribbean</span>
+                    <a href="#">
+                        <img src="../images2/islandpop.jpeg" alt="Caribbean">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Afro</span>
+                    <a href="#">
+                        <img src="../images2/africanheat.jpeg" alt="Afro">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Songwriters</span>
+                    <a href="#">
+                        <img src="../images2/alitamposi.jpeg" alt="Songwriters">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Nature & Noise</span>
+                    <a href="#">
+                        <img src="../images2/whitenoise.jpeg" alt="Nature & Noise">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Funk & Disco</span>
+                    <a href="#">
+                        <img src="../images2/nu-funk.jpeg" alt="Funk & Disco">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Netflix</span>
+                    <a href="#">
+                        <img src="../images2/archies.jpeg" alt="Netflix">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Asian Pacific Islander Heritage</span>
+                    <a href="#">
+                        <img src="../images2/jasmine.jpeg" alt="jasmine">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>GLOW</span>
+                    <a href="#">
+                        <img src="../images2/glow.jpeg" alt="glow">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Music + Talk</span>
+                    <a href="#">
+                        <img src="../images2/songsexplain.jpeg" alt="music + talk">
+                    </a>
+                </div>
+                <div class="song-detail">
+                    <span>Latin</span>
+                    <a href="#">
+                        <img src="../images2/viva latino.jpeg" alt="Latin">
+                    </a>
+                </div>
+                <div class="song-detail">   
+                    <span>Tastemakers</span>
+                    <a href="#">
+                        <img src="../images2/bear.jpeg" alt="Tastemakers">
+                    </a>
+                </div>
+
+            </div>
+            
+            <div class="foot-div">
+                <div class="foot1">
+                    <div class="foot1-info">
+                        <h4>Company</h4>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the Record</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Communities</h4>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Useful links</h4>
+                        <p>Support</p>
+                        <p>Free Mobile App</p>
+                    </div>
+                    <div class="foot1-info">
+                        <h4>Spotify Plans</h4>
+                        <p>Premium Individual</p>
+                        <p>Premium Duo</p>
+                        <p>Premium Family</p>
+                        <p>Premium Student</p>
+                        <p>Spotify Free</p>
+                    </div>
+                    <div class="foot1-social">
+                        <div class="social-info"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="social-info"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="social-info"><i class="fa-brands fa-facebook"></i></div>
+                    </div>
+                </div>
+                <div class="foot2"></div>
+                <div class="foot3">
+                    <div class="foot3-info">
+                        <span>Legal</span>
+                        <span>Safety & Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="foot3-info">
+                        <span id="copyright"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="foot-sec1"></section>
+            <section class="foot-sec2">
+                <div class="foot-inner1">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="foot-inner2">
+                    <span>-:--</span>
+                    <div class="line">
+                        <div class="inner-line"></div>
+                    </div>
+                    <span>-:--</span>
+                </div>
+            </section>
+            <section class="foot-sec3">
+                <div class="foot-inner">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-bars">
+                    </i>
+                    <i class="fa-solid fa-computer"></i>
+                    <div>
+                        <i class="fa-solid fa-volume-low"></i>
+                        <input type="range" min="0" max="1" oninput="rangeUpdate(this)">
+                    </div>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="../js/new.js"></script>
+</body>
+</html>
